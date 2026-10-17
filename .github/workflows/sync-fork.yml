@@ -29,7 +29,7 @@ jobs:
 
       - name: Fetch and Sync All Branches
         run: |
-          git remote add upstream [https://github.com/$](https://github.com/$){{ env.UPSTREAM_REPOSITORY }}.git
+          git remote add upstream https://github.com/${{ env.UPSTREAM_REPOSITORY }}.git
           git fetch upstream --prune
 
           # 获取上游的所有远程分支，并排除 HEAD
